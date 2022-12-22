@@ -3,26 +3,56 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.abdallah_abdelazim.shoestoreapp.ShoeListFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/loginFragment"
+        android:name="com.abdallah_abdelazim.shoestoreapp.LoginFragment"
+        android:label="@string/login_fragment_label"
+        tools:layout="@layout/fragment_login">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_loginFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.abdallah_abdelazim.shoestoreapp.ShoeDetailsFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/welcomeFragment"
+        android:name="com.abdallah_abdelazim.shoestoreapp.WelcomeFragment"
+        android:label="@string/welcome_fragment_label"
+        tools:layout="@layout/fragment_welcome">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_welcomeFragment_to_instructionsFragment"
+            app:destination="@id/instructionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/instructionsFragment"
+        android:name="com.abdallah_abdelazim.shoestoreapp.InstructionsFragment"
+        android:label="@string/instructions_fragment_label"
+        tools:layout="@layout/fragment_instructions">
+
+        <action
+            android:id="@+id/action_instructionsFragment_to_shoeListFragment"
+            app:destination="@id/shoeListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeListFragment"
+        android:name="com.abdallah_abdelazim.shoestoreapp.ShoeListFragment"
+        android:label="@string/shoe_list_fragment_label"
+        tools:layout="@layout/fragment_shoe_list">
+
+        <action
+            android:id="@+id/action_shoeListFragment_to_shoeDetailsFragment"
+            app:destination="@id/shoeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeDetailsFragment"
+        android:name="com.abdallah_abdelazim.shoestoreapp.ShoeDetailsFragment"
+        android:label="@string/shoe_details_fragment_label"
+        tools:layout="@layout/fragment_shoe_details">
+
+        <action
+            android:id="@+id/action_shoeDetailsFragment_to_shoeListFragment"
+            app:destination="@id/shoeListFragment" />
     </fragment>
 </navigation>

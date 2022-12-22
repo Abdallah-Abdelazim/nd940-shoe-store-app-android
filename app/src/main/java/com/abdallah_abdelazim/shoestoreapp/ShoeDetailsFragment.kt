@@ -1,19 +1,18 @@
 package com.abdallah_abdelazim.shoestoreapp
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import com.abdallah_abdelazim.shoestoreapp.databinding.FragmentSecondBinding
+import androidx.fragment.app.Fragment
+import com.abdallah_abdelazim.shoestoreapp.databinding.FragmentShoeDetailsBinding
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
 class ShoeDetailsFragment : Fragment() {
 
-    private var _binding: FragmentSecondBinding? = null
+    private var _binding: FragmentShoeDetailsBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,9 +21,9 @@ class ShoeDetailsFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
-        _binding = FragmentSecondBinding.inflate(inflater, container, false)
+        _binding = FragmentShoeDetailsBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -32,9 +31,9 @@ class ShoeDetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
-        }
+//        binding.buttonSecond.setOnClickListener {
+//            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+//        }
     }
 
     override fun onDestroyView() {
