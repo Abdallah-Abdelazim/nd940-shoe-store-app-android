@@ -1,2 +1,15 @@
 # Shoe Store Android App
-First project in Udacity Advanced Android Kotlin Development Nanodegree.
+First project in [Udacity Android Kotlin Developer Nanodegree (nd940)](https://www.udacity.com/course/android-kotlin-developer-nanodegree--nd940).
+
+## This project consists of five screens: 
+1. Login screen.
+2. Welcome onboarding screen.
+3. Instructions onboarding screen.
+4. Shoe Listing screen.
+5. Shoe Detail screen for adding a new shoe.
+
+## In this project I've used:
+* Kotlin.
+* Android Jetpack Navigation Architecture Component.
+* Material Design Components library for Android.
+* Android Jetpack ViewModel & LiveData.
