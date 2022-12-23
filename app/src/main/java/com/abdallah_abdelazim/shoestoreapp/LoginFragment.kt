@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.abdallah_abdelazim.shoestoreapp.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
@@ -21,6 +22,24 @@ class LoginFragment : Fragment() {
     ): View {
         _binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        attachUiListeners()
+    }
+
+    private fun attachUiListeners() {
+        binding.btnLogin.setOnClickListener {
+            navigateToWelcomeFragment()
+        }
+        binding.btnCreateAccount.setOnClickListener {
+            navigateToWelcomeFragment()
+        }
+    }
+
+    private fun navigateToWelcomeFragment() {
+        findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
     }
 
     companion object {
