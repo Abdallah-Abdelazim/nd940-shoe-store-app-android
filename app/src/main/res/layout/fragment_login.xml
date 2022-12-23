@@ -16,18 +16,16 @@
             app:barrierDirection="end"
             app:constraint_referenced_ids="tv_email_label,tv_password_label" />
 
-        <TextView
-            android:id="@+id/tv_greeting"
+        <ImageView
+            android:id="@+id/iv_greeting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login_greeting"
-            android:textColor="?colorPrimary"
-            android:textSize="24sp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@id/et_email"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/login"
+            app:tint="?colorPrimary" />
 
         <TextView
             android:id="@+id/tv_email_label"
