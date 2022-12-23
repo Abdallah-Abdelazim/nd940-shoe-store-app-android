@@ -1,10 +1,17 @@
 <resources>
     <string name="app_name">Shoe Store App</string>
 
-    <string name="login_fragment_label">Login Fragment</string>
-    <string name="welcome_fragment_label">Welcome Fragment</string>
-    <string name="instructions_fragment_label">Welcome Fragment</string>
-    <string name="shoe_list_fragment_label">Shoe List Fragment</string>
-    <string name="shoe_details_fragment_label">Shoe Details Fragment</string>
+    <string name="login_fragment_label">Login</string>
+    <string name="welcome_fragment_label">Welcome</string>
+    <string name="instructions_fragment_label">Instructions</string>
+    <string name="shoe_list_fragment_label">Shoe List</string>
+    <string name="shoe_details_fragment_label">Shoe Details</string>
+
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="hint_email_input_field">Enter your email</string>
+    <string name="hint_password_input_field">Enter your password</string>
+    <string name="btn_text_login">Login</string>
+    <string name="btn_text_create_account">Create new account</string>
 
 </resources>
