@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.abdallah_abdelazim.shoestoreapp.LoginFragment"
+        android:name="com.abdallah_abdelazim.shoestoreapp.login.LoginFragment"
         android:label="@string/login_fragment_label"
         tools:layout="@layout/fragment_login">
 
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.abdallah_abdelazim.shoestoreapp.WelcomeFragment"
+        android:name="com.abdallah_abdelazim.shoestoreapp.onboarding.WelcomeFragment"
         android:label="@string/welcome_fragment_label"
         tools:layout="@layout/fragment_welcome">
 
@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/instructionsFragment"
-        android:name="com.abdallah_abdelazim.shoestoreapp.InstructionsFragment"
+        android:name="com.abdallah_abdelazim.shoestoreapp.onboarding.InstructionsFragment"
         android:label="@string/instructions_fragment_label"
         tools:layout="@layout/fragment_instructions">
 
@@ -39,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/shoeListFragment"
-        android:name="com.abdallah_abdelazim.shoestoreapp.ShoeListFragment"
+        android:name="com.abdallah_abdelazim.shoestoreapp.shoelist.ShoeListFragment"
         android:label="@string/shoe_list_fragment_label"
         tools:layout="@layout/fragment_shoe_list">
 
@@ -49,7 +49,7 @@
     </fragment>
     <fragment
         android:id="@+id/shoeDetailsFragment"
-        android:name="com.abdallah_abdelazim.shoestoreapp.ShoeDetailsFragment"
+        android:name="com.abdallah_abdelazim.shoestoreapp.shoelist.ShoeDetailsFragment"
         android:label="@string/shoe_details_fragment_label"
         tools:layout="@layout/fragment_shoe_details">
 

@@ -1,4 +1,4 @@
-package com.abdallah_abdelazim.shoestoreapp
+package com.abdallah_abdelazim.shoestoreapp.login
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.abdallah_abdelazim.shoestoreapp.R
 import com.abdallah_abdelazim.shoestoreapp.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
