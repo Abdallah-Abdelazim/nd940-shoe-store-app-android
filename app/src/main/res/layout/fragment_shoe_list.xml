@@ -3,15 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--
+    Used the FrameLayout to hold the ScrollView while keeping the FloatingActionButton
+    fixed at the bottom right corner of the screen.
+    This is a simple layout with only two children and design-wise
+    they can have their UI overlap so FrameLayout is perfect here.
+    -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".shoelist.ShoeListFragment">
 
+        <!--
+        Used ScrollView to allow scrolling the child when its height
+        exceeds the screen height.
+        -->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <!--
+            Used "vertical" LinearLayout to position the children one below the other
+            like a list.
+            -->
             <LinearLayout
                 android:id="@+id/ll_shoe_items"
                 android:layout_width="match_parent"

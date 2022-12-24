@@ -10,6 +10,15 @@
             type="com.abdallah_abdelazim.shoestoreapp.shoelist.ShoeUiModel" />
     </data>
 
+    <!--
+    Used ConstraintLayout to build a responsive UI that looks good on phones & tablets of
+    any screen sizes.
+    It's also flexible & easy to use when positioning children relative to each other
+    without adding many layers of nested layouts.
+    Although this UI is doable using a LinearLayouts but I'd need to use
+    nested LinearLayout to achieve this result.
+    ConstraintLayout kept my layout hierarchy flat.
+    -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

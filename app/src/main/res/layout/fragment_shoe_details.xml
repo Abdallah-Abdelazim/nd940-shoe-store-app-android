@@ -22,6 +22,12 @@
             type="androidx.lifecycle.MutableLiveData&lt;String&gt;" />
     </data>
 
+    <!--
+    Used ConstraintLayout to build a responsive UI that looks good on phone & tablets of
+    any screen sizes.
+    It's also flexible & easy to use when positioning children relative to each other
+    without adding many layers of nested layouts.
+    -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

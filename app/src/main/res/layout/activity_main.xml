@@ -3,6 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--
+    CoordinatorLayout extends FrameLayout and adds some extra features.
+    Used as top-level application decor and to allow interactions with child views.
+    Here it's used to host the app bar with its toolbar.
+     -->
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
