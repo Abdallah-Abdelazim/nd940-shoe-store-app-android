@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="shoe"
+            type="com.abdallah_abdelazim.shoestoreapp.shoelist.ShoeUiModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/tv_shoe_name_label"
+            style="@style/ShoeItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_shoe_name"
+            app:layout_constraintBottom_toBottomOf="@id/tv_shoe_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_shoe_name" />
+
+        <TextView
+            android:id="@+id/tv_shoe_company_label"
+            style="@style/ShoeItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_shoe_company"
+            app:layout_constraintBottom_toBottomOf="@id/tv_shoe_company"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_shoe_company" />
+
+        <TextView
+            android:id="@+id/tv_shoe_size_label"
+            style="@style/ShoeItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_shoe_size"
+            app:layout_constraintBottom_toBottomOf="@id/tv_shoe_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_shoe_size" />
+
+        <TextView
+            android:id="@+id/tv_shoe_description_label"
+            style="@style/ShoeItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_shoe_description"
+            app:layout_constraintBottom_toBottomOf="@id/tv_shoe_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_shoe_description" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier_labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="end"
+            app:barrierMargin="8dp"
+            app:constraint_referenced_ids="tv_shoe_name_label,tv_shoe_company_label,tv_shoe_size_label,tv_shoe_description_label" />
+
+        <TextView
+            android:id="@+id/tv_shoe_name"
+            style="@style/ShoeItemText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@{shoe.name}"
+            app:layout_constraintBottom_toTopOf="@id/tv_shoe_company"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/barrier_labels"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Some amazing name" />
+
+        <TextView
+            android:id="@+id/tv_shoe_company"
+            style="@style/ShoeItemText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@{shoe.company}"
+            app:layout_constraintBottom_toTopOf="@id/tv_shoe_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/barrier_labels"
+            app:layout_constraintTop_toBottomOf="@id/tv_shoe_name"
+            tools:text="Some amazing company" />
+
+        <TextView
+            android:id="@+id/tv_shoe_size"
+            style="@style/ShoeItemText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@{Integer.toString(shoe.size)}"
+            app:layout_constraintBottom_toTopOf="@id/tv_shoe_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/barrier_labels"
+            app:layout_constraintTop_toBottomOf="@id/tv_shoe_company"
+            tools:text="44" />
+
+        <TextView
+            android:id="@+id/tv_shoe_description"
+            style="@style/ShoeItemText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@{shoe.description}"
+            app:layout_constraintBottom_toTopOf="@id/view_separator_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/barrier_labels"
+            app:layout_constraintTop_toBottomOf="@id/tv_shoe_size"
+            tools:text="Some amazing description" />
+
+        <View
+            android:id="@+id/view_separator_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="?colorControlHighlight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

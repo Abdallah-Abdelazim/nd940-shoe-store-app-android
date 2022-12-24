@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="LoginFieldLabel">
+    <style name="InputFieldLabel">
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">?colorOnBackground</item>
     </style>
 
-    <style name="LoginField">
+    <style name="InputField">
         <item name="android:textSize">20sp</item>
     </style>
 
-    <style name="LoginButtonStyle">
+    <style name="LoginButton">
         <item name="android:textSize">16sp</item>
     </style>
 
@@ -25,5 +25,18 @@
         <item name="android:textColor">?colorPrimary</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="ShoeDetailsButton">
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ShoeItemText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?colorOnBackground</item>
     </style>
 </resources>

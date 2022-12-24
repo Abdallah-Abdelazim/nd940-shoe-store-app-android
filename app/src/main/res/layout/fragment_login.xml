@@ -9,13 +9,6 @@
         android:padding="16dp"
         tools:context=".login.LoginFragment">
 
-        <androidx.constraintlayout.widget.Barrier
-            android:id="@+id/barrier_labels"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:barrierDirection="end"
-            app:constraint_referenced_ids="tv_email_label,tv_password_label" />
-
         <ImageView
             android:id="@+id/iv_greeting"
             android:layout_width="wrap_content"
@@ -29,7 +22,7 @@
 
         <TextView
             android:id="@+id/tv_email_label"
-            style="@style/LoginFieldLabel"
+            style="@style/InputFieldLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/label_email"
@@ -41,7 +34,7 @@
 
         <TextView
             android:id="@+id/tv_password_label"
-            style="@style/LoginFieldLabel"
+            style="@style/InputFieldLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/label_password"
@@ -51,12 +44,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/et_password" />
 
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier_labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="end"
+            app:barrierMargin="8dp"
+            app:constraint_referenced_ids="tv_email_label,tv_password_label" />
+
         <EditText
             android:id="@+id/et_email"
-            style="@style/LoginField"
+            style="@style/InputField"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:autofillHints="emailAddress"
             android:hint="@string/hint_email_input_field"
             android:inputType="textEmailAddress"
@@ -68,10 +68,9 @@
 
         <EditText
             android:id="@+id/et_password"
-            style="@style/LoginField"
+            style="@style/InputField"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:autofillHints="password"
             android:hint="@string/hint_password_input_field"
@@ -83,7 +82,7 @@
 
         <Button
             android:id="@+id/btn_login"
-            style="@style/LoginButtonStyle"
+            style="@style/LoginButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
@@ -95,7 +94,7 @@
 
         <Button
             android:id="@+id/btn_create_account"
-            style="@style/LoginButtonStyle"
+            style="@style/LoginButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
