@@ -1,5 +1,5 @@
 # Shoe Store Android App
-First project in [Udacity Android Kotlin Developer Nanodegree (nd940)](https://www.udacity.com/course/android-kotlin-developer-nanodegree--nd940).
+First project in [Udacity Advanced Android Kotlin Development Nanodegree (nd940)](https://www.udacity.com/course/android-kotlin-developer-nanodegree--nd940).
 
 ## This project consists of five screens: 
 1. Login screen.
